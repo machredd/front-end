@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git branch: 'master', url: ''
+                git branch: 'master', url: 'https://github.com/machredd/front-end.git'
             }
         }
         stage('Build'){
@@ -25,7 +25,7 @@ pipeline{
         }
          stage('Deploy'){
       steps{
-bat 'Java -jar C:/Program Files/Jenkins/workspace/ecommercebeckend/target/ecommercebackend-0.0.1-SHAPSHOT.jar'
+bat 'Java -jar C:\Users\MACHREDD\OneDrive - Capgemini\Desktop\ECommerce-Angular-Spring-master (1)\ECommerce-Angular-Spring-master\frontend.jar'
         
         }
     }
